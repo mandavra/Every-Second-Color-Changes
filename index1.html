@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every second color change</title>
+</head>
+
+<body>
+    <h1 id="p1"> man davra </h1>
+
+    <button id="b1" onclick="randomize()">Click Me!</button>
+</body>
+<script>
+
+    function randomize() {
+        document.getElementById('p1').style.color = randomColors();
+    }
+    function randomColors() {
+        return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+</script>
+
+</html>
